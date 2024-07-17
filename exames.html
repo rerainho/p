@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="Tcc/Assets/Style/exames.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXAMES</title>
+=======
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="Tcc/Assets/Style/exames.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Exames</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+      <link rel="shortcut icon" href="Tcc/Assets/Img/logo.png" type="image/x-icon">
+>>>>>>> d208dd0c80df0d10659c78f7409d7ee1f79c78d2
+</head>
+
+<body>
+      <nav>
+            <div class="header">
+                  <a href="index.html"><img style="width: 10vw; margin-left: 20px;" src="Tcc/Assets/Img/logo.png"
+                              alt=""></a>
+            </div>
+
+            <ul>
+                  <li><a href="index.html">PÁGINA INICIAL</a></li>
+                  <li><a href="exames.html">EXAMES</a></li>
+                  <li><a style="color: #ff6e22;" target="_blank" href="login.html">ENTRAR</a></li>
+            </ul>
+            <div class="search-bar">
+                  <input style="background-color: #f1f1f1;" type="text" placeholder="Precisa de algo?">
+                  <button type="submit">Buscar</button>
+            </div>
+      </nav>
+
+      <form class="form">
+            <h2 class="exame">Selecione um Exame</h2>
+            <h2 class="titulo">Confira na lista abaixo os exames que nós trabalhamos e todas as suas informações sobre
+                  os exames</h2>
+            <select class="change" id="options" name="options">
+                  <option value="0" data-response="">Selecione um tipo de exame aqui</option>
+
+                  <option value="1" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS <br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ALBUMINA</option>
+
+                  <option value="2" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ALT (TGP)</option>
+
+                  <option value="3" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">AMILASE</option>
+
+                  <option value="4" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM <br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">AST (TGO)</option>
+
+                  <option value="5" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE EM FRASCO PROTEGIDO DA LUZ<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">BILIRRUBINAS</option>
+
+                  <option value="6" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CÁLCIO IÔNICO</option>
+
+                  <option value="7" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CÁLCIO TOTAL</option>
+
+
+
+                  <option value="8" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CLORETOS</option>
+
+
+                  <option value="9" data-response="PREPARO: JEJUM DESEJÁVEL 8 A 12 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">COLESTEROL</option>
+
+
+                  <option value="10" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CREATININA</option>
+
+                  <option value="11" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FOSFATASE ALCALINA</option>
+
+                  <option value="12" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FÓSFORO</option>
+
+                  <option value="13" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FRUTOSAMINA</option>
+
+                  <option value="14" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">GAMA GT</option>
+
+                  <option value="15" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS A 12 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">GLICOSE</option>
+
+                  <option value="16" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">LIPASE</option>
+
+                  <option value="17" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">POTÁSSIO</option>
+
+                  <option value="18" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">PROTEÍNAS TOTAIS</option>
+
+                  <option value="19" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">SÓDIO</option>
+
+                  <option value="20" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS A 12 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TRIGLICÉRIDES</option>
+
+                  <option value="21" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">URÉIA</option>
+
+                  <option value="22" data-response="PREPARO: JEJUM 12 HORAS NO PRÉ PRANDIAL<br>
+            MATERIAL: MINIMO 4mL DE SANGUE TOTAL OU 1ml DE SORO OU PLASMA (EDTA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ÁCIDOS BILIARES
+                  </option>
+
+                  <option value="23" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ÁCIDO ÚRICO</option>
+
+                  <option value="24" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">SDMA</option>
+
+                  <option value="25" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">SPEC</option>
+
+                  <option value="26" data-response="PREPARO: JEJUM DESEJAVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMOLISE PROTEGIDO DA LUZ<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMOLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ÁCIDO FÓLICO</option>
+
+                  <option value="27" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CPK</option>
+
+                  <option value="28" data-response="PREPARO: JEJUM DESEJÁVEL 8 A 12 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO ISENTO DE LIPEMIA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">COLESTEROL TOTAL E FRAÇÕES</option>
+
+                  <option value="29" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FERRO SÉRICO</option>
+
+                  <option value="30" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FOSFATASE ALCALINA E ISOENZIMAS</option>
+
+                  <option value="31" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TLI CANINO (TRIPSINOGÊNIO) </option>
+
+                  <option value="32" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TRANSFERRINA</option>
+
+                  <option value="33" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PROTEGIDO DA LUZ<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">VITAMINA B12</option>
+
+                  <option value="34" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PROTEGIDO DA LUZ<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">VITAMINA D</option>
+
+                  <option value="35" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO..">HEMOGRAMA</option>
+
+
+                  <option value="36" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">ERITROGRAMA</option>
+
+                  <option value="37" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">LEUCOGRAMA</option>
+
+                  <option value="38" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">HEMATÓCRITO</option>
+
+                  <option value="39" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">CONTAGEM DE PLAQUETAS</option>
+
+
+                  <option value="40" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">RETICULÓCITOS</option>
+
+                  <option value="41" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">TEMPO DE PROTROMBINA</option>
+
+                  <option value="42" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 3ml EM TUBO CITRATO (TAMPA AZUL), INFORMAR SE USO DE ANTICOAGULANTE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">TEMPO DE TROMBOPLASTINA PARCIAL ATIVADA</option>
+
+                  <option value="43" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: EXAME COLHIDO APENAS NO LABORATÓRIO<br>
+            ENVIO: EXAME COLHIDO APENAS NO LABORATÓRIO<br>
+            REJEIÇÃO: EXAME COLHIDO APENAS NO LABORATÓRIO">TEMPO DE COAGULAÇÃO</option>
+
+                  <option value="44" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: EXAME COLHIDO APENAS NO LABORATÓRIO<br>
+            ENVIO: EXAME COLHIDO APENAS NO LABORATÓRIO<br>
+            REJEIÇÃO: EXAME COLHIDO APENAS NO LABORATÓRIO">TEMPO DE SANGRAMENTO</option>
+
+                  <option value="45" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL EM TUBO EDTA, RESPEITANDO PROPORÇÃO (2ML, 3ML CONFORME ETIQUETA)<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE ACENTUADA. POUCO VOLUME. COÁGULO.">FIBRINOGÊNIO</option>
+
+                  <option value="46" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: ÚRINA RECENTE 5 A 30ml COLHIDA POR MICÇÃO ESPONTÂNEA, SONDAGEM URETRAL OU CISTOCENTESE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">URINÁLISE</option>
+
+                  <option value="47" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: CÁLCULO<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 7 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+            REJEIÇÃO: NÃO UTILIZAR CONSERVANTES. NÃO UTILIZAR ÁLCOOL OU FORMOL.">QUALIFICAÇÃO DE CÁLCULOS</option>
+
+                  <option value="48" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: URINA RECENTE 5 A 30ml COLHIDA POR MICÇÃO ESPONTANEA, SONDAGEM URETRAL OU CISTOCENTESE<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            - REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">RELAÇÃO PROTEÍNA CREATININA URINÁRIA
+                  </option>
+
+                  <option value="49" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TÓPICA<br>
+            MATERIAL: RASPADOS PROFUNDOS DE PELE E PELOS, ENTRE LÂMINAS, COM ÓLEO MINERAL<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+            - REJEIÇÃO: MATERIAL INSUFICIENTE.">PESQUISA DE ECTOPARASITAS</option>
+
+                  <option value="50" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TOPICA<br>
+            MATERIAL: PELOS ARRANCADOS PELA RAIZ E ENVIADOS EM FRASCO SECO E LIMPO. SWAB SECO DE SECREÇÃO OTOLÓGICA<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+            REJEIÇÃO: MATERIAL INSUFICIENTE.">CULTURA DE FUNGOS (DERMATÓFITOS)</option>
+
+                  <option value="51" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TÓPICA<br>
+            MATERIAL: SWAB STUART<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA.<br>
+            REJEIÇÃO: SWAB SEM SECREÇÃO OU SECO (SEM MEIO STUART).">CULTURA E ANTIBIOGRAMA AERÓBICOS (PELE/OUVIDO)
+                  </option>
+
+                  <option value="52" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TÓPICA<br>
+            MATERIAL: SWAB STUART<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: SWAB SEM SECREÇÃO OU SECO (SEM MEIO STUART).">CULTURA E ANTIBIOGRAMA ANAERÓBICOS (PELE/OUVIDO)
+                  </option>
+
+                  <option value="53" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TÓPICA<br>
+            MATERIAL: SWAB SECO OU ROLAMENTO DA SERCREÇÃO EM LÂMINA<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+            REJEIÇÃO: AUSÊNCIA DE AMOSTRA E LÂMINAS QUEBRADAS.">PESQUISA DE MALASSEZIA</option>
+
+                  <option value="54" data-response="PREPARO: 7 DIAS SEM BANHO E/OU TERAPIA TÓPICA<br>
+            MATERIAL: SWAB SECO OU ROLAMENTO DA SERCREÇÃO EM LÂMINA<br>
+            ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+            REJEIÇÃO: AUSÊNCIA DE AMOSTRA E LÂMINAS QUEBRADAS.">COLORAÇÃO DE GRAM</option>
+
+                  <option value="55" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CORTISOL</option>
+
+                  <option value="56" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">ESTRADIOL</option>
+
+                  <option value="57" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">PROGESTERONA</option>
+
+                  <option value="58" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TESTOSTERONA</option>
+
+                  <option value="59" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TSH</option>
+
+                  <option value="60" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">T3</option>
+
+                  <option value="61" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">T4 TOTAL</option>
+
+                  <option value="62" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">T4 LIVRE (DIÁLISE)</option>
+
+                  <option value="63" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE. COLETAR ANTES DA ADMINISTRAÇÃO DA PRÓXIMA DOSE DO MEDICAMENTO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">FENOBARBITAL</option>
+
+                  <option value="64" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">17 HIDROXIPROGESTERONA</option>
+
+                  <option value="65" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PÓS APLICAÇÃO DE ACTH<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA (TUBO PRÉ E PÓS)<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">17 HIDROXIPROGESTERONA PÓS ACTH</option>
+
+                  <option value="66" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PÓS APLICAÇÃO DE DEXAMETASONA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CORTISOL PÓS ACTH</option>
+
+                  <option value="67" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PÓS APLICAÇÃO DE ACTH<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME..">CORTISOL PÓS DEXAMETASONA</option>
+
+                  <option value="68" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 4ml EM TAMPA VERMELHA OU 2,0 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">DOSAGEM DE BROMETO DE POTÁSSIO</option>
+
+                  <option value="69" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 4ml EM TAMPA VERMELHA OU 2,0 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">DOSAGEM DE INSULINA ENDÓGENA</option>
+
+                  <option value="70" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 4ml EM TAMPA VERMELHA OU 2,0 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">DOSAGEM DE INSULINA EXÓGENA (MEDICAMENTOS)
+                  </option>
+
+                  <option value="71" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 4ml EM TAMPA VERMELHA OU 2,0 ml DE SORO.<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">DOSAGEM DE FENOBARBITAL</option>
+
+                  <option value="72" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PRÉ E PÓS APLICAÇÃO DE ACTH<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA (TUBO PRÉ E PÓS)<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CORTISOL 2 DOSAGENS - BASAL E POS ESTIMULO COM
+                        ACTH</option>
+
+                  <option value="73" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PRÉ E PÓS APLICAÇÃO DE DEXAMETASONA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA (TUBO PRÉ E PÓS)<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CORTISOL 2 DOSAGENS - BASAL E POS SUPRESSAO COM
+                        DEXAMETASONA</option>
+
+                  <option value="74" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO SEM HEMÓLISE PRÉ E PÓS APLICAÇÃO DE DEXAMETASONA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA (TUBO PRÉ E PÓS)<br>
+            REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">CORTISOL 3 DOSAGENS - BASAL E POS SUPRESSAO COM
+                        DEXAMETASONA</option>
+
+                  <option value="75" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: 0,5 A 1,0ml DE URINA, LÍQUIDO OU SECREÇÃO EM TUBO SECO E ESTÉRIL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">CULTURA E ANTIBIOGRAMA AERÓBICOS
+                        (URINA/LÍQUIDOS/SECREÇÕES)</option>
+
+                  <option value="76" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: 0,5 A 1,0ml DE URINA, LÍQUIDO OU SECREÇÃO EM TUBO SECO E ESTÉRIL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">CULTURA E ANTIBIOGRAMA ANAERÓBICOS
+                        (URINA/LIQUIDOS/SECREÇÕES)</option>
+
+                  <option value="77" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA 4DX (EHRLICHIA, ANAPLASMA, LYME
+                        EDIROFILARIA)</option>
+
+                  <option value="78" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA BABESIA</option>
+
+                  <option value="79" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA BRUCELOSE</option>
+
+                  <option value="80" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO. SECREÇÃO OCULAR/NASAL SE HOUVER<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS..">SOROLOGIA CINOMOSE</option>
+
+                  <option value="81" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA EHRLICHIA</option>
+
+                  <option value="82" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA FIV / FELV</option>
+
+                  <option value="83" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES FRESCAS EM FRASCO SECO E LIMPO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA GIARDIA</option>
+
+                  <option value="84" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA LEISHMANIOSE</option>
+
+                  <option value="85" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA LEPTOSPIROSE</option>
+
+                  <option value="86" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES FRESCAS EM FRASCO SECO E LIMPO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA PARVOVIROSE</option>
+
+                  <option value="87" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO. LÍQUIDO LIVRE SE HOUVER<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA PIF</option>
+
+                  <option value="88" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+            MATERIAL: SANGUE TOTAL 2ml EM TAMPA VERMELHA OU 0,5 ml DE SORO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">SOROLOGIA TOXOPLASMOSE</option>
+
+                  <option value="89" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR ADENOVIRUS CANINO 1 (CAV-1) HEPATITE
+                        INFECCIOSA CANINA</option>
+
+                  <option value="90" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SWAB FARINGEO PROFUNDO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR ADENOVIRUS CANINO 2 (CAV-2)</option>
+
+                  <option value="91" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR ANAPLASMA PLATYS</option>
+
+                  <option value="92" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR BABESIA CANIS</option>
+
+                  <option value="93" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR BARTONELLA SPP</option>
+
+                  <option value="94" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR BLASTOMYCES DERMATITIDIS</option>
+
+                  <option value="95" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SWAB FARINGEO PROFUNDO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR BORDETELLA BRONCHISEPTICA (TOSSE DOS
+                        CANIS)</option>
+
+                  <option value="96" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: URINA / SEMEN / SWAB VAGINAL PROFUNDO<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR BRUCELLA SPP</option>
+
+                  <option value="97" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CAMPYLOBACTER COLI / JEJUNI</option>
+
+                  <option value="98" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SWAB FARINGEO PROFUNDO / SWAB CONJUNTIVA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CHLAMYDOPHILA PSITACCI</option>
+
+                  <option value="99" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CLOSTRIDIUM PERFRINGENS</option>
+
+                  <option value="100" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CORONAVIRUS CANINO (CCOV)</option>
+
+                  <option value="101" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: LIQUOR<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CRYPTOCOCCUS SPP</option>
+
+                  <option value="102" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CRYPTOSPORIDIUM SPP</option>
+
+                  <option value="103" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR DIROFILARIA IMMITIS</option>
+
+                  <option value="104" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA / PUNÇÃO DE MEDULA OSSEA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR EHRLICHIA CANIS</option>
+
+                  <option value="105" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA / PUNÇÃO DE MEDULA OSSEA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR POOL PARA EHRLICHIA SPP</option>
+
+                  <option value="106" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR GIARDIA SPP</option>
+
+                  <option value="107" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR HEPATOZOON SPP</option>
+
+                  <option value="108" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SWAB FARINGEO PROFUNDO / SWAB CONJUNTIVA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR HERPESVIRUS CANINO 1 (CHV-1)</option>
+
+                  <option value="109" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR HISTOPLASMA CAPSULATUM</option>
+
+                  <option value="110" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: PUNÇÃO DE LINFONODO / PUNÇÃO DE MEDULA OSSEA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR LEISHMANIA SPP</option>
+
+
+                  <option value="111" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA EM EDTA E URINA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR LEPTOSPIRA INTERROGANS</option>
+
+
+                  <option value="112" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR MYCOPLASMA HAEMOCANIS</option>
+
+                  <option value="113" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: LIQUOR<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR PARVOVIRUS CANINO 2 (CPV-2)</option>
+
+                  <option value="114" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR RANGELIA VITALLI</option>
+
+                  <option value="115" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR RICKETTSIA RICKETTSII</option>
+
+                  <option value="116" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR SALMONELLA SPP</option>
+
+                  <option value="117" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: LIQUOR / SWAB AMPOLA RETAL<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR TOXOPLASMA GONDII</option>
+
+                  <option value="118" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR TRYPANOSSOMA SPP</option>
+
+                  <option value="119" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: POOL: URINA, SWAB CONJUNTIVA E SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR VIRUS DA CINOMOSE CANINA</option>
+
+                  <option value="120" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR VIRUS DA PARVOVIROSE CANINA</option>
+
+                  <option value="121" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SWAB FARINGEO PROFUNDO<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR VIRUS DA INFLUENZA CANINA</option>
+
+                  <option value="122" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SWAB FARINGEO PROFUNDO<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR VIRUS DA PARAINFLUENZA CANINA</option>
+
+                  <option value="123" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: EFUSÃO<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CORONAVIRUS FELINO PIF</option>
+
+                  <option value="124" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR MYCOPLASMA HAEMOFELIS</option>
+
+                  <option value="125" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR MYCOPLASMA HAEMOMINUTUM </option>
+
+                  <option value="126" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR MYCOPLASMA TURICENSIS </option>
+
+                  <option value="127" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR FIV (VIRUS DA IMUNODEFICIENCIA FELINA)</option>
+
+                  <option value="128" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR FELV (VIRUS DA LEUCEMIA FELINA)</option>
+
+                  <option value="129" data-response="PREPARO: NÃO SE APLICA<br>
+     MATERIAL: SWAB FARINGEO PROFUNDO / SWAB CONJUNTIVA<br>
+     ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+     REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CHLAMYDOPHILA FELIS</option>
+
+
+                  <option value="130" data-response="PREPARO: NÃO SE APLICA<br>
+                MATERIAL: FEZES / SWAB AMPOLA RETALM<br>
+               ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+               REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR TRITRICHOMONAS FOETUS</option>
+
+                  <option value="131" data-response="PREPARO: NÃO SE APLICA<br>
+        MATERIAL: SWAB FARINGEO PROFUNDO<br>
+        ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+        REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR HERPESVIRUS FELINO</option>
+
+                  <option value="132" data-response="PREPARO: NÃO SE APLICA<br>
+    MATERIAL: SWAB FARINGEO PROFUNDO<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+    REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CALICIVIRUS FELINO</option>
+
+                  <option value="133" data-response="PREPARO: NÃO SE APLICA<br>
+        MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+        ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+        REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CYTAUXZOON FELIS</option>
+
+                  <option value="134" data-response="PREPARO: NÃO SE APLICA<br>
+            MATERIAL: FEZES / SWAB AMPOLA RETAL<br>
+            ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+            REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR CORONAVIRUS ENTERICO FELINO</option>
+
+                  <option value="135" data-response="PREPARO: NÃO SE APLICA<br>
+                MATERIAL: SANGUE TOTAL 2ml EM EDTA<br>
+                ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+                REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS.">PCR VIRUS DA PANLEUCOPENIA FELINA
+                  </option>
+
+                  <option value="136" data-response="PREPARO: NÃO SE APLICA<br>
+       MATERIAL: 8 A 15 PENAS COLETADAS DO PEITO DA AVE<br>
+       ENVIO: ENVIAR À TEMPERATURA AMBIENTE ATÉ 2 DIAS APÓS COLETA. EM FRASCO SECO E LIMPO.<br>
+       REJEIÇÃO: MATERIAL INSUFICIENTE, PENAS CORTADAS OU SEM O BULBO.">SEXAGEM DE AVES - PCR</option>
+
+                  <option value="137" data-response="PREPARO: JEJUM NÃO SE APLICA<br>
+    MATERIAL: 2 GRAMAS DE FEZES FRESCAS EM FRASCO UNIVERSAL SEM CONSERVANTE<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+    REJEIÇÃO: FEZES EM MEIO DE CONSERVAÇÃO.">COPROLOGICO FUNCIONAL</option>
+
+                  <option value="138" data-response="PREPARO: NÃO SE APLICA<br>
+      MATERIAL: 20 A 40 GRAMAS DE FEZES FRESCAS EM FRASCO UNIVERSAL SEM CONSERVANTE<br>
+      ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+      REJEIÇÃO: MATERIAL INSUFICIENTE.">PARASITOLÓGICO DE FEZES COMPLETO</option>
+
+                  <option value="139" data-response="PREPARO: NÃO SE APLICA<br>
+        MATERIAL: 20 A 40 GRAMAS DE FEZES FRESCAS EM FRASCO UNIVERSAL SEM CONSERVANTE<br>
+        ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+        REJEIÇÃO: MATERIAL INSUFICIENTE.">PARASITOLÓGICO DE FEZES - 3 AMOSTRAS</option>
+
+                  <option value="140" data-response="PREPARO: NÃO SE APLICA<br>
+       MATERIAL: 20 A 40 GRAMAS DE FEZES FRESCAS EM FRASCO UNIVERSAL SEM CONSERVANTE<br>
+       ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+       REJEIÇÃO: FEZES EM MEIO DE CONSERVAÇÃO.">PESQUISA DE CRYPTOSPORIDIUM SP</option>
+
+                  <option value="141" data-response="PREPARO: JEJUM DESEJAVEL 8 HORAS<br>
+    MATERIAL: 20 A 40 GRAMAS DE FEZES FRESCAS EM FRASCO UNIVERSAL SEM CONSERVANTE<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+    REJEIÇÃO: FEZES EM MEIO DE CONSERVAÇÃO OU COM SANGUE (EM CADELAS EM PRO-ESTRO).">PESQUISA DE SANGUE OCULTO NAS
+                        FEZES</option>
+
+                  <option value="142" data-response="PREPARO: NÃO SE APLICA<br>
+       MATERIAL: LÂMINAS<br>
+       ENVIO: LÂMINAS EM PORTA-LÂMINAS BEM VEDADO<br>
+       REJEIÇÃO: LÂMINAS QUEBRADAS OU SEM MATERIAL.">ANÁLISE CITOLOGICA</option>
+
+
+                  <option value="143" data-response="PREPARO: NÃO SE APLICA<br>
+        MATERIAL: LÍQUIDO TORÁCICO OU ABDOMINAL EM TUBO EDTA E EM TUBO SECO (ENVIAR AMBOS)<br>
+        ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 24 HORAS APÓS COLETA<br>
+        REJEIÇÃO: AMOSTRA SEM REFRIGERAÇÃO OU EM FRASCOS INADEQUADOS, POUCO VOLUME.">ANÁLISE DE LÍQUIDO CAVITARIO
+                        (TORAX / ABDÔMEN)</option>
+
+
+                  <option value="144" data-response="PREPARO: NÃO SE APLICA<br>
+    MATERIAL: PEÇAS OU FRAGMENTOS DE TECIDOS FIXADOS EM FORMOL 10%<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+    REJEIÇÃO: AMOSTRA SEM FORMOL 10%.">HISTOPATOLÓGICO</option>
+
+
+                  <option value="145" data-response="PREPARO: NÃO SE APLICA<br>
+    MATERIAL: BLOCO PARAFINADO COM FRAGMENTOS DE TECIDOS E RESULTADO DE HISTOPATOLÓGICO<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+    REJEIÇÃO: BLOCO PARAFINADO COM BAIXA PRESERVAÇÃO OU COM FRAGMENTO TECIDUAL INSUFICIENTE.">IMUNOFENOTIPAGEM</option>
+
+
+                  <option value="146" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+    MATERIAL: SANGUE TOTAL 3ml EM TAMPA VERMELHA OU 1,0 ml DE SORO.<br>
+    ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+    REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TESTE ALÉRGICO ALÉRGENOS ALIMENTARES</option>
+
+                  <option value="147" data-response="PREPARO: JEJUM DESEJÁVEL 8 HORAS<br>
+        MATERIAL: SANGUE TOTAL 3ml EM TAMPA VERMELHA OU 1,0 ml DE SORO.<br>
+        ENVIO: ENVIAR À TEMPERATURA DE 2 A 8°C ATÉ 2 DIAS APÓS COLETA<br>
+        REJEIÇÃO: HEMÓLISE OU LIPEMIA ACENTUADAS. POUCO VOLUME.">TESTE ALÉRGICO ALÉRGENOS AMBIENTAIS</option>
+
+                  </option>
+            </select>
+      </form>
+
+      <p id="response"></p>
+
+      <section class="services">
+            <h2 style="color: #ff6e22; font-family: 'DynaPuff';">Agendamento</h2>
+            <p>Quer agendar a consulta para o seu pet? Clique no botão abaixo para agendar a consulta</p>
+            <a href="agenda.html" class="descobrir">Agendar</a>
+      </section>
+
+      <footer class="site-footer">
+            <div class="footer-content">
+              <h2 style="color: #0028B4;">Contato</h2>
+              <p>Telefone: (11) 2978-7054</p>
+              <p>Telefone: (11) 2579-6715</p>
+              <p>Unidade: Av. Leôncio de Magalhães, 229 - Jardim São Paulo, São Paulo - SP, 02042-010</p>
+              <p>Horário de funcionamento: Segunda-feira à sexta-feira das 8:00 às 16:30</p>
+            </div>
+            <div class="footer-social"> <!-- Acrescentar ícones das redes sociais -->
+              <h2 style="color: #0028B4;">Redes Sociais</h2>
+              <a target="_blank" href="https://www.facebook.com/petmaisdiagnosticos/"><img style="width: 25px;"
+                  src="Tcc/Assets/Img/facebook-2.png" alt="Facebook">Facebook</a>
+              <a target="_blank" href="https://www.instagram.com/petmaisdiagnosticos/"><img style="width: 25px;"
+                  src="Tcc/Assets/Img/instagram-2.png" alt="Instagram">Instagram</a>
+              <a target="_blank" href="https://wa.me/551125796715"><img style="width: 25px;"
+                  src="Tcc/Assets/Img/whatsapp-2.png" alt="Whatsapp">Whatsapp</a>
+              <a target="_blank" href="malito:@contato@petmaisdiagnosticos.com.br"><img style="width: 25px;"
+                  src="Tcc/Assets/Img/gmail-2.png" alt="E-mail">E-mail</a>
+            </div>
+      </footer>
+
+      <script>
+            document.getElementById('options').addEventListener('change', function () {
+                  // Obtém a opção selecionada
+                  var selectedOption = this.options[this.selectedIndex];
+                  // Obtém o valor do atributo data-response
+                  var response = selectedOption.getAttribute('data-response');
+                  // Exibe a resposta no parágrafo
+                  document.getElementById('response').innerHTML = response;
+            });
+      </script>
+</body>
+
+</html>

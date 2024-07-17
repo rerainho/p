@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <link rel="stylesheet" href="Tcc/Assets/Style/agenda.css">
+    <link rel="shortcut icon" href="Tcc/Assets/Img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <nav>
+        <div class="header">
+            <a href="index.html"><img style="width: 10vw; margin-left: 20px; margin-top: 10px;"
+                    src="Tcc/Assets/Img/logo.png" alt=""></a>
+        </div>
+
+        <ul>
+            <li><a href="index.html">PÁGINA INICIAL</a></li>
+            <li><a href="exames.html">EXAMES</a></li>
+            <li><a style="color: #ff6e22;" target="_blank" href="login.html">ENTRAR</a></li>
+        </ul>
+        <div class="search-bar">
+            <input style="background-color: #f1f1f1;" type="text" placeholder="Precisa de algo?">
+            <button type="submit">Buscar</button>
+        </div>
+    </nav>
+    <div class="container">
+        <header>
+            <h1>Agenda de Consultas - Pet Mais Diagnósticos</h1>
+            <p>Endereço: Unidade: Av. Leôncio de Magalhães, 229 - Jardim São Paulo, São Paulo - SP, 02042-010</p>
+            <p>Telefone: (11) 2978-7054</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <h2>Agendar Consulta</h2>
+                <form id="appointmentForm">
+                    <label for="cliente">Nome do Cliente:</label>
+                    <input type="text" id="cliente" name="cliente" required>
+
+                    <label for="pet">Nome do Pet:</label>
+                    <input type="text" id="pet" name="pet" required>
+
+                    <label for="servico">Tipo de Serviço:</label>
+                    <select id="servico" name="servico" required>
+                        <option value="">Selecione um serviço</option>
+                        <option value="banho-tosa">Ácido Foliculo</option>
+                        <option value="consulta">CPK</option>
+                        <option value="vacina">Ferro Sérico</option>
+                        <option value="passeio">Vitamina D</option>
+                        <option value="adestramento">Raio-X</option>
+                        <option value="outros">Ultrassom</option>
+                        <option value="outros">Cardiologia</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="data">Data e Hora:</label>
+                    <input type="datetime-local" id="data" name="data" required>
+
+                    <button type="submit">Agendar Consulta</button>
+                </form>
+            </div>
+
+            <div class="agenda-container">
+                <h2>Agenda de Consultas</h2>
+                <table id="agendaTable">
+                    <thead>
+                        <tr>
+                            <th>Data e Hora</th>
+                            <th>Cliente</th>
+                            <th>Pet</th>
+                            <th>Serviço</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- As consultas serão adicionadas aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <h2 style="color: #0028B4;">Contato</h2>
+            <p>Telefone: (11) 2978-7054</p>
+            <p>Telefone: (11) 2579-6715</p>
+            <p>Unidade: Av. Leôncio de Magalhães, 229 - Jardim São Paulo, São Paulo - SP, 02042-010</p>
+            <p>Horário de funcionamento: Segunda-feira à sexta-feira das 8:00 às 16:30</p>
+        </div>
+        <div class="footer-social"> <!-- Acrescentar ícones das redes sociais -->
+            <h2 style="color: #0028B4;">Redes Sociais</h2>
+            <a target="_blank" href="https://www.facebook.com/petmaisdiagnosticos/"><img style="width: 25px;"
+                    src="Tcc/Assets/Img/facebook-2.png" alt="Facebook">Facebook</a>
+            <a target="_blank" href="https://www.instagram.com/petmaisdiagnosticos/"><img style="width: 25px;"
+                    src="Tcc/Assets/Img/instagram-2.png" alt="Instagram">Instagram</a>
+            <a target="_blank" href="https://wa.me/551125796715"><img style="width: 25px;"
+                    src="Tcc/Assets/Img/whatsapp-2.png" alt="Whatsapp">Whatsapp</a>
+            <a target="_blank" href="malito:@contato@petmaisdiagnosticos.com.br"><img style="width: 25px;"
+                    src="Tcc/Assets/Img/gmail-2.png" alt="E-mail">E-mail</a>
+        </div>
+    </footer>
+    <script src="Tcc/Assets/JavaScript/agenda.js"></script>
+</body>
+
+</html>

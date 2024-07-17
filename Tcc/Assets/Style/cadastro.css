@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+nav {
+  background-color: #0028B4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 80px;
+  height: 80px;
+  width: 100%;
+}
+
+nav div a img {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+  margin: auto;
+} 
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+  margin-top: 62px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-container {
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.avatar {
+  margin-bottom: 20px;
+}
+
+.avatar-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #0028B4;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-svg {
+  width: 30px;
+}
+
+::placeholder {
+  color: #f1f1f1;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* Para ajustar os inputs em telas pequenas */
+}
+
+.input-group input {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #0028B4;
+  color: #f1f1f1;
+  border: none;
+  margin-bottom: 10px; /* Para espaçamento entre inputs em telas pequenas */
+}
+
+input[type="password"].repeat-password {
+  background-color: #ff6e22;
+  color: #f1f1f1;
+  border: none;
+}
+
+button {
+  background-color: #ff6e22;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .img-login {
+    width: 15vh;
+  }
+
+  .input-group input {
+      width: 100%;
+  }
+
+  .form-container {
+      padding: 20px;
+  }
+}
